@@ -1,0 +1,676 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-09 11:40:17.690459",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details",
+  "ecode",
+  "ename",
+  "emp_desig",
+  "emp_branch",
+  "emp_division",
+  "emp_region",
+  "section_break_section",
+  "survey_form",
+  "que_1_section_break",
+  "q1_radio_field_1",
+  "q1_radio_field_2",
+  "q1_radio_field_3",
+  "q1_radio_field_4",
+  "q1_radio_field_5",
+  "ans_1",
+  "column_break_oluvc",
+  "feedbackremark1",
+  "que_2_section_break",
+  "q2_radio_field_1",
+  "q2_radio_field_2",
+  "q2_radio_field_3",
+  "q2_radio_field_4",
+  "q2_radio_field_5",
+  "ans_2",
+  "column_break_uuoot",
+  "feedbackremark2",
+  "que_3_section_break",
+  "q3_radio_field_1",
+  "q3_radio_field_2",
+  "q3_radio_field_3",
+  "q3_radio_field_4",
+  "q3_radio_field_5",
+  "ans_3",
+  "column_break_xpt7u",
+  "feedbackremark3",
+  "que_4_section_break",
+  "q4_radio_field_1",
+  "q4_radio_field_2",
+  "q4_radio_field_3",
+  "q4_radio_field_4",
+  "q4_radio_field_5",
+  "ans_4",
+  "column_break_2odnw",
+  "feedbackremark4",
+  "que_5_section_break",
+  "q5_radio_field_1",
+  "q5_radio_field_2",
+  "q5_radio_field_3",
+  "q5_radio_field_4",
+  "q5_radio_field_5",
+  "ans_5",
+  "column_break_vyjxc",
+  "feedbackremark5",
+  "que_6_section_break",
+  "q6_radio_field_1",
+  "q6_radio_field_2",
+  "q6_radio_field_3",
+  "q6_radio_field_4",
+  "q6_radio_field_5",
+  "ans_6",
+  "column_break_w6l3i",
+  "feedbackremark6",
+  "que_7_section_break",
+  "q7_radio_field_1",
+  "q7_radio_field_2",
+  "q7_radio_field_3",
+  "q7_radio_field_4",
+  "q7_radio_field_5",
+  "ans_7",
+  "column_break_vjeso",
+  "feedbackremark7",
+  "que_8_section_break",
+  "q8_radio_field_1",
+  "q8_radio_field_2",
+  "q8_radio_field_3",
+  "q8_radio_field_4",
+  "q8_radio_field_5",
+  "ans_8",
+  "column_break_e5c6y",
+  "feedbackremark8",
+  "que_9_section_break",
+  "q9_radio_field_1",
+  "q9_radio_field_2",
+  "q9_radio_field_3",
+  "q9_radio_field_4",
+  "q9_radio_field_5",
+  "ans_9",
+  "column_break_iygq2",
+  "feedbackremark9",
+  "section_break_ssdi1",
+  "genericcomments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "survey_form",
+   "fieldtype": "Heading",
+   "label": "Survey Form"
+  },
+  {
+   "fieldname": "column_break_oluvc",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_uuoot",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "columns": 5,
+   "fieldname": "feedbackremark1",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark",
+   "width": "5"
+  },
+  {
+   "columns": 5,
+   "fieldname": "feedbackremark2",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark",
+   "width": "10"
+  },
+  {
+   "fieldname": "ans_2",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 2",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Employee Details Shared",
+   "options": "No\nYes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ecode",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee code"
+  },
+  {
+   "fieldname": "ename",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "emp_desig",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Designation"
+  },
+  {
+   "fieldname": "ans_1",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 1",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "que_1_section_break",
+   "fieldtype": "Section Break",
+   "label": "1. Do you believe the organization has your best interests in mind when making business decisions?"
+  },
+  {
+   "fieldname": "que_2_section_break",
+   "fieldtype": "Section Break",
+   "label": "2. Are you satisfied with the way we have managed both our business and people during this time?"
+  },
+  {
+   "fieldname": "que_3_section_break",
+   "fieldtype": "Section Break",
+   "label": "3. Do you believe we have maintained adequate communication with all employees?"
+  },
+  {
+   "default": "0",
+   "fieldname": "q1_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q1_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q1_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q1_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q1_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "fieldname": "ans_3",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 3",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_xpt7u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark3",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "que_4_section_break",
+   "fieldtype": "Section Break",
+   "label": "4. Have you continued to collaborate with your team during this time?"
+  },
+  {
+   "fieldname": "ans_4",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 4",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_2odnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark4",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "que_5_section_break",
+   "fieldtype": "Section Break",
+   "label": "5. Does your team inspire you to do your best work ?"
+  },
+  {
+   "fieldname": "ans_5",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 5",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_vyjxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark5",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "que_6_section_break",
+   "fieldtype": "Section Break",
+   "label": "6. Does your team help you successfully complete your work?"
+  },
+  {
+   "fieldname": "ans_6",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 6",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "que_7_section_break",
+   "fieldtype": "Section Break",
+   "label": "7. Do you believe you have the appropriate amount of information to make correct decision about your work?"
+  },
+  {
+   "fieldname": "que_8_section_break",
+   "fieldtype": "Section Break",
+   "label": "8. When something unexpected comes up in your work, do you usually know whom to ask for help?"
+  },
+  {
+   "fieldname": "que_9_section_break",
+   "fieldtype": "Section Break",
+   "label": "9. Do you have good understanding of our informal structures and processes?"
+  },
+  {
+   "fieldname": "column_break_w6l3i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark6",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "ans_7",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 7",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_vjeso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark7",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "ans_8",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 8",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_e5c6y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark8",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "ans_9",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Question 9",
+   "options": "\nagree\nsomewhat agree\nneutral\nsomewhat disagree\ndisagree"
+  },
+  {
+   "fieldname": "column_break_iygq2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedbackremark9",
+   "fieldtype": "Small Text",
+   "label": "Feedback/Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Survey Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ssdi1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "genericcomments",
+   "fieldtype": "Small Text",
+   "label": "Generic comments:"
+  },
+  {
+   "default": "0",
+   "fieldname": "q2_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q2_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q2_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q2_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q2_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q3_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q3_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q3_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q3_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q3_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q4_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q4_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q4_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q4_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q4_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q5_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q5_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q5_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q5_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q5_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q6_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q6_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q6_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q6_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q6_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q7_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q7_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q7_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q7_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q7_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q8_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q8_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q8_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q8_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q8_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q9_radio_field_1",
+   "fieldtype": "Check",
+   "label": "Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q9_radio_field_2",
+   "fieldtype": "Check",
+   "label": "Somewhat Agree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q9_radio_field_3",
+   "fieldtype": "Check",
+   "label": "Neutral"
+  },
+  {
+   "default": "0",
+   "fieldname": "q9_radio_field_4",
+   "fieldtype": "Check",
+   "label": "Somewhat Disagree"
+  },
+  {
+   "default": "0",
+   "fieldname": "q9_radio_field_5",
+   "fieldtype": "Check",
+   "label": "Disagree"
+  },
+  {
+   "fieldname": "emp_branch",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch"
+  },
+  {
+   "fieldname": "emp_division",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Division"
+  },
+  {
+   "fieldname": "emp_region",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Region"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-14 12:10:25.153221",
+ "modified_by": "Administrator",
+ "module": "Employee_module",
+ "name": "Employee Survey Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Sales User",
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

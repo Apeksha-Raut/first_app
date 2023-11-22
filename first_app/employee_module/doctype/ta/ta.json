@@ -1,0 +1,323 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TA-{####}",
+ "creation": "2023-11-04 12:08:50.057988",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "front_end_tab",
+  "back_end_tab",
+  "employee_details_section",
+  "status",
+  "ecode",
+  "employee_full_name",
+  "designation",
+  "branch",
+  "column_break_m2mke",
+  "division",
+  "region",
+  "currentdate",
+  "travel_allowance_details",
+  "source_location_column",
+  "from",
+  "from_latitude",
+  "from_longitude",
+  "your_location_start",
+  "time_start",
+  "column_break_bbqnz",
+  "to",
+  "to_latitude",
+  "to_longitude",
+  "your_location_end",
+  "time_reach",
+  "section_break_1ybfg",
+  "distance_in_kilometer",
+  "section_break_91t4d",
+  "purpose",
+  "mode_of_transport",
+  "section_break_xjuel",
+  "ticket",
+  "upload_ticket_image",
+  "fare_amount",
+  "map",
+  "submit_data",
+  "server_button",
+  "travel_allowance_sheet",
+  "ta_form",
+  "total_amount",
+  "total_kilometers"
+ ],
+ "fields": [
+  {
+   "fieldname": "ecode",
+   "fieldtype": "Int",
+   "label": "ECode"
+  },
+  {
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "label": "Employee Full Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "bold": 1,
+   "fieldname": "travel_allowance_details",
+   "fieldtype": "Section Break",
+   "label": "Travel Allowance Details"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_m2mke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Source Location",
+   "fieldname": "your_location_start",
+   "fieldtype": "Button",
+   "label": "Your Location"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To",
+   "read_only": 1
+  },
+  {
+   "description": "Destination Location",
+   "fieldname": "your_location_end",
+   "fieldtype": "Button",
+   "label": "Your Location"
+  },
+  {
+   "fieldname": "column_break_bbqnz",
+   "fieldtype": "Column Break",
+   "label": "Destination Location"
+  },
+  {
+   "depends_on": "eval:doc.from && doc.to",
+   "fieldname": "distance_in_kilometer",
+   "fieldtype": "Float",
+   "label": "Distance (in Kilometer)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Map",
+   "options": "<div id=\"map\" style=\"height: 400px;\"></div>"
+  },
+  {
+   "depends_on": "eval:doc.from && doc.to",
+   "fieldname": "mode_of_transport",
+   "fieldtype": "Select",
+   "label": "Mode of Transport",
+   "options": "\nTwo Wheeler\nFour Wheeler\nBus\nTrain"
+  },
+  {
+   "fieldname": "upload_ticket_image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Upload Ticket Image"
+  },
+  {
+   "fieldname": "fare_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Fare Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xjuel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ticket",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Ticket Amount"
+  },
+  {
+   "depends_on": "eval:doc.from && doc.to",
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Purpose"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "depends_on": "eval:doc.from",
+   "fieldname": "time_start",
+   "fieldtype": "Time",
+   "label": "Time (Start)",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.to",
+   "fieldname": "time_reach",
+   "fieldtype": "Time",
+   "label": "Time (Reach)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "travel_allowance_sheet",
+   "fieldtype": "Table",
+   "label": "Travel Allowance Sheet",
+   "options": "TA Sheet"
+  },
+  {
+   "fieldname": "submit_data",
+   "fieldtype": "Button",
+   "label": "Submit"
+  },
+  {
+   "default": "In-Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In-Progress\nSubmitted\nCancelled"
+  },
+  {
+   "fieldname": "section_break_1ybfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_91t4d",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "source_location_column",
+   "fieldtype": "Column Break",
+   "label": "Source Location"
+  },
+  {
+   "fieldname": "from_latitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "From Latitude"
+  },
+  {
+   "fieldname": "from_longitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "From Longitude"
+  },
+  {
+   "fieldname": "to_latitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "To Latitude"
+  },
+  {
+   "fieldname": "to_longitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "To Longitude"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('System Manager')",
+   "fieldname": "front_end_tab",
+   "fieldtype": "Tab Break",
+   "label": "Front End"
+  },
+  {
+   "fieldname": "back_end_tab",
+   "fieldtype": "Tab Break",
+   "label": "Back End"
+  },
+  {
+   "fieldname": "currentdate",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "ta_form",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "total_kilometers",
+   "fieldtype": "Data",
+   "label": "Total Kilometers"
+  },
+  {
+   "fieldname": "server_button",
+   "fieldtype": "Button",
+   "label": "Server Button"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-21 10:37:27.690788",
+ "modified_by": "Administrator",
+ "module": "Employee_module",
+ "name": "TA",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Cyan",
+   "title": "In-Progress"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  }
+ ]
+}
